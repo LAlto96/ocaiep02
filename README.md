@@ -1,4 +1,4 @@
-# ocaiep02
+# OpenClassrooms - AI Engineer - P02 Participez à un concours sur la Smart City
 ## Project Description
 Vous êtes fraîchement établi en tant qu’expert indépendant spécialisé en intelligence artificielle. Vous participez régulièrement à des concours pour vous faire la main sur de nouveaux sujets.
 
