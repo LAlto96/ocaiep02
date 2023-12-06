@@ -1,0 +1,79 @@
+% !TEX program = xelatex
+
+\documentclass{beamer}
+\usepackage{graphicx}
+\usepackage{caption}
+\usetheme{metropolis} % Use trigon theme
+% \trigonset{titlestyle=style2} % Use style
+\captionsetup[figure]{font=tiny,labelfont=tiny} % Set caption font size
+
+% Set title page info
+\title{Participez à un concour sur la smartcity}
+\subtitle{AI Engineer - Projet 2}
+\date{\today}
+\author{Ludovic Lafon}
+\institute{OpenClassrooms}
+
+% Begin document
+\begin{document}
+\maketitle
+\tableofcontents
+\section{Exploration des données}
+\begin{frame}{Nombre de données par colonnes}
+	\begin{figure}
+		\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{ressources/missingno1.png}
+			\caption{Nombre de données par colonnes}
+	\end{figure}
+	\begin{figure}
+		\includegraphics[width=0.80\textwidth,keepaspectratio]{ressources/dfinfo1.png}
+			\caption{pandas.DataFrame.shape() - 200137 lignes, 18 colonnes}
+	\end{figure}
+\end{frame}
+\begin{frame}{Données Manquantes}
+	\begin{columns}
+	\begin{column}{0.2\textwidth}
+		\tiny
+		Données manquantes :
+		\begin{itemize}
+			\item domanialite
+			\item complement addresse
+			\item numero
+			\item libelle francais
+			\item genre
+			\item espece
+			\item variete
+			\item stade developpement
+			\item remarquable
+		\end{itemize}
+	\end{column}
+	\begin{column}{0.9\textwidth}
+		\begin{figure}
+		\centering
+		\includegraphics[width=\textwidth,keepaspectratio]{ressources/missingno2.png}
+			\caption{Nombre de données par colonnes pour les colonnes non intégralement remplies}
+		\end{figure}
+	\end{column}
+	\end{columns}
+	\begin{columns}
+	\begin{column}{0.4\textwidth}
+		\begin{alertblock}{Une colonne est vide !}
+			\begin{itemize}
+				\item numero
+			\end{itemize}
+		\end{alertblock}
+	\end{column}
+	\begin{column}{0.6\textwidth}
+		\begin{alertblock}{Deux colonnes sont presque vide !}
+			\begin{itemize}
+				\item complement addresse
+				\item variete
+			\end{itemize}
+		\end{alertblock}
+	\end{column}
+	\end{columns}
+\end{frame}
+\section{Traitement des données manquantes}
+\begin{frame}{Domanialité}
+
+\end{frame}
+\end{document}
